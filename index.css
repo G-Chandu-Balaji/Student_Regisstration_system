@@ -36,7 +36,7 @@ h2 {
   text-align: center;
   padding: 20px;
   text-transform: capitalize;
-  background: linear-gradient(to bottom right, blue, green);
+  background: linear-gradient(to bottom right, red, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
