@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
   inputs.forEach((input) => {
     if (input.value.trim() === "") {
       hasEmptyField = true;
-      input.style.borderColor = "red"; // Optional: visual cue
+      input.style.borderColor = "red"; // visual cue
     } else {
       input.style.borderColor = ""; // Reset if previously marked
     }
@@ -26,11 +26,15 @@ form.addEventListener("submit", function (e) {
   const data = Object.fromEntries(formdata.entries());
   console.log(data);
   arr.push(data);
+
+  //storeing new inout/data in localstorage
   localStorage.setItem("studentDetails", JSON.stringify(arr));
   arr = JSON.parse(localStorage.getItem("studentDetails"));
-  refresh();
-  this.reset();
+  refresh(); // rendering the table
+  this.reset(); // to reset input fields in form after submitting
 });
+
+//---------to load table---------------
 
 function refresh() {
   const tablebody = document.getElementById("studenttable");
@@ -83,12 +87,15 @@ function refresh() {
   }
 }
 
+// delete item and update new arr to localstorage
 function deleteItem(i) {
   arr.splice(i, 1);
   localStorage.setItem("studentDetails", JSON.stringify(arr));
   arr = JSON.parse(localStorage.getItem("studentDetails"));
   refresh();
 }
+
+//to edit item and update new arr to localstorage
 function editItem(index) {
   console.log("hi", index);
   const row = document.getElementById(`row-${index}`);
@@ -121,6 +128,7 @@ function editItem(index) {
       contactNo: newcontact,
     };
 
+    //storing new arr in local storage
     localStorage.setItem("studentDetails", JSON.stringify(arr));
     arr = JSON.parse(localStorage.getItem("studentDetails"));
     refresh();

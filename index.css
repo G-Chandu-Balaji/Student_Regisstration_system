@@ -75,6 +75,10 @@ a {
   width: 10vw;
   background-color: brown;
 }
+#gitbutton {
+  width: 10vw;
+  background-color: green;
+}
 /* -----------------details------------------------- */
 .details {
 }
@@ -121,7 +125,7 @@ button {
   margin: 5px;
 }
 i {
-  color: brown;
+  color: red;
   padding-right: 4px;
 }
 
@@ -135,6 +139,7 @@ button:hover {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  background-color: brown;
 }
 input {
   width: 80%;
