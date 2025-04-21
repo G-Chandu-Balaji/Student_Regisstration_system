@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Student registration system</h1>
+        <p >
+          A simple web-based application that allows students to register their name, class, address, and contact number. It includes functionalities to<span> add, edit, view,</span> and <span> delete </span> student records, making it easy to manage student data efficiently.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <div class="home-box">
+          <h2>Enter New Student details</h2>
+          <form id="studentForm" class="form-box">
+            <label for="name">name</label>
+            <input type="text" id="name" name="studentName" />
+            <label for="studentid">student id</label>
+            <input type="number" id="studentid" name="studentid" />
+            <label for="emailId">email Id</label>
+            <input type="email" id="emailId" name="emailId" />
+            <label for="contactNo">contact number</label>
+            <input type="number" id="contactNo" name="contactNo" />
+            <button class="btn-submit">submit</button>
+          </form>
+          <a href="#student_details">
+             <button id="viewButton">View Records</button>
+          </a>
+        </div>
+
+      </section>
+      <section class="details">
+        <div class="details-box">
+          <h2 id="student_details">All student details</h2>
+          <div class="table_container">
+          <table   class="table-box">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>student Id</th>
+                <th>email</th>
+                <th>contact no</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="studenttable">
+             
+              </form>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, red, blue);
+}
+
+.heading {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  height: 100vh;
+}
+.home {
+  position: relative;
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 40px;
+  text-transform: capitalize;
+  background: linear-gradient(to bottom right, blue, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  text-transform: capitalize;
+  background: linear-gradient(to bottom right, blue, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  padding: 100px;
+  padding-top: 50px;
+
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: blue;
+  gap: 10px;
+}
+a {
+  margin-top: 5vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: end;
+}
+#viewButton {
+  width: 10vw;
+  background-color: brown;
+}
+/* -----------------details------------------------- */
+.details {
+}
+.details-box {
+  height: 35vh;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 80vw;
+
+  background-color: yellow;
+}
+
+.table_container {
+  height: 20vh;
+  overflow-y: auto;
+  margin-bottom: 5vh;
+}
+table {
+  padding-bottom: 2vh;
+  margin-top: 2vh;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead th {
+  text-align: start;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: yellow;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  margin: 5px;
+}
+i {
+  color: brown;
+  padding-right: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-submit {
+  margin-top: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  width: 80%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+label {
+  font-size: large;
+  margin-left: 10%;
+  text-transform: capitalize;
+}
+
+p {
+  text-align: center;
+  font-size: large;
+}
+span {
+  font-weight: bold;
+}
